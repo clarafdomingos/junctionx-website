@@ -386,13 +386,24 @@ section[id="partners"] {
 /* ABOUT */
 .block {
     width: min(var(--max), 92%);
-    border: 1px solid rgba(255, 255, 255, .08);
+    border: none;
     border-radius: 20px;
     margin: 60px auto;
     padding: 50px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .02))
+    background: #171717;
+    position: relative;
+    overflow: hidden;
 }
 
+.block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #BDBDFF;
+}
 .prose {
     max-width: 820px;
     margin-left: 6px;

@@ -274,7 +274,9 @@ section[id="partners"] {
 .main {
     position: relative;
     overflow: hidden;
-    background-image: url('https://junctionxlisbon.my.canva.site/_assets/media/50e46d0937909c4ee898f0c4c920bfd3.jpg');
+    background-image: url('./assets/initial-image.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .main .grid {
@@ -287,6 +289,7 @@ section[id="partners"] {
     pointer-events: none;
     inset: 0;
     background:
+        rgba(0, 0, 0, 0.5),
         radial-gradient(800px 300px at 110% 10%, rgba(88, 101, 242, .24), transparent 60%),
         radial-gradient(500px 250px at -10% 100%, rgba(108, 119, 255, .25), transparent 60%);
 }
@@ -913,4 +916,13 @@ details[open] summary::before {
     outline: 2px solid var(--primary-2);
     outline-offset: 2px;
     border-bottom-color: transparent;
+}
+
+.logo-banner {
+  max-width:800px;
+  margin-bottom: 16px;
+}
+
+.main .h1 {
+  font-size: clamp(60px, 10vw, 120px);
 }
